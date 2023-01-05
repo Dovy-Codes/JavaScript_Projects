@@ -1,9 +1,9 @@
-var X = "Hello boys and girls";
-var Y = "\"Who are you\"" + " He asked me back then.";
-var Mom = "Laima", Dad = "Algis", Sister = "Sima";
-var Mom = Mom.fontcolor("blue");
-var Dad = Dad.fontcolor("blue");
-var Sister = Sister.fontcolor("blue");
-let math = 3+3
-document.write(math);
-window.alert(X);
+var X = "Hello boys and girls"; //Creating a variable and assigning it a value
+var Y = "\"Who are you\"" + " He asked me back then."; //Creating a variable and assigning it a concatenated string
+var Mom = "Laima", Dad = "Algis", Sister = "Sima"; //Creating multiple variables and assigning them values
+var Mom = Mom.fontcolor("blue"); //Changing variable colour
+var Dad = Dad.fontcolor("blue"); //Changing variable colour
+var Sister = Sister.fontcolor("blue"); //Changing variable colour
+let math = 3+3 //Expression in a variable
+document.write(math); //writting a variable onto html
+window.alert(X); //Using alert function 
