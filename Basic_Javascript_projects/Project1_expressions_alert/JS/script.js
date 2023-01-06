@@ -4,6 +4,12 @@ var Mom = "Laima", Dad = "Algis", Sister = "Sima"; //Creating multiple variables
 var Mom = Mom.fontcolor("blue"); //Changing variable colour
 var Dad = Dad.fontcolor("blue"); //Changing variable colour
 var Sister = Sister.fontcolor("blue"); //Changing variable colour
-let math = 3+3 //Expression in a variable
+let math = 3+3; //Expression in a variable
 document.write(math); //writting a variable onto html
-window.alert(X); //Using alert function 
+
+
+let button = document.getElementById("that-button");
+alert(button);
+button.onclick = function () {
+
+};

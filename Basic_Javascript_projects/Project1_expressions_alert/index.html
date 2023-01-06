@@ -5,9 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alert</title>
-    <script src="./JS/script.js"></script>
+    <!-- <script src="./JS/script.js"></script> -->
+    <style>
+        button {
+            padding:1em 2em;
+            background-color: rgb(93, 207, 99);
+            border: none;
+            border-radius: 30px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(72, 161, 77);
+        }
+    </style>
 </head>
 <body>
     <h1>Hello World!</h1>
+    <button id="that-button">Green</button>
+    <script>
+        let button = document.getElementById("that-button");
+
+        button.onclick = function() {
+            alert("You clicked the button");
+        };
+    </script>
 </body>
 </html>
