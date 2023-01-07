@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./JS/main.js" defer></script>
     <title>functions</title>
 </head>
 <body>
-    <button id="btn">Press</button>
+    <!--This button will change text upon being pressed-->
+    <button id="btn" onclick="btnclicked()">Press</button>
+
+    <!--Text will change upon clicking on it-->
     <p id="text">Hello everyone</p>
     <p id="concatenate" onclick="myFunction()">Click here!</p>
-    <!--I am putting JS because I need DOM tree to be built before running it-->
-    <script src="./JS/main.js"></script>
+
+    <!--Text will change upon clicking on it-->
+    <input type="number" id="value-1">
+    <input type="number" id="value-2">
+    <button type="button" onclick="multiply()">Try it</button>
+    <p id="result"></p>
 </body>
 </html>
