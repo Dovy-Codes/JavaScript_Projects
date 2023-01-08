@@ -11,7 +11,8 @@ let car = {
 delete car.engine;
 
 
-// This function takes one of car object properties and places it instead of Click Me! paragraph
+/* This function takes car objects properties and places it instead of
+ Click Me! paragraph and shows that one property was deleted. */
 function dictionary() {
-    document.getElementById("dictionary").innerHTML = car.colour;
+    document.getElementById("dictionary").innerHTML = car.colour + " " + car.engine;
 };
