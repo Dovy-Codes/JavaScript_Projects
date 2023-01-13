@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./JS/main.js" defer></script>
+    <title>Scope time function</title>
+</head>
+<body>
+<!---------Testing Global and Local variables--------------->
+    <button onclick="function1()">Click Here</button>
+    <p id="test"></p>
+    <button onclick="function2()">Click Here</button>
+    <p id="test2"></p>
+<!----------Greeting user after he clicks the button-------->
+    <p id="greet" onclick="getTime()">Click to be greeted</p>
+<!----------Dog insurance calculator simulator-------------->
+    <h2>Insure your dog UK</h2>
+    <p>How many do you dogs you have?</p>
+    <select name="pets" id="petCount" style="text-align: center;">
+      <option></option>
+      <option value=1>1</option>
+      <option value=2>2</option>
+      <option value=3>3</option>
+      <option value=4>4 or more</option>
+    </select>
+    <p id="answer"></p>
+    <!--This button calls function to add text for the user depending on the input-->
+    <button onclick="multiPetDiscount()">Submit</button>
+</body>
+</html>
