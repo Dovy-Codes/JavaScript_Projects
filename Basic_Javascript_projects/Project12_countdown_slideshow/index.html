@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./JS/main.js" defer></script>
+    <link rel="stylesheet" href="./CSS/main.css">
+    <title>Countdown Slideshow</title>
+</head>
+<body>
+<!----------------SlideShow--------------
+----------------------------------------->
+    <div class="slideshow">
+
+    <!-----------------Spain----------------->
+        <div class="slide fade">
+            <div class="numberText">1 / 3</div>
+            <img src="./images/Spain.jpg" alt="Image of Spain">
+            <div class="text">Spain</div>
+        </div>
+        
+
+    <!-----------------Germany----------------->
+        <div class="slide fade">
+            <div class="numberText">2 / 3</div>
+            <img src="./images/Germany.jpg" alt="Image of Germany">
+            <div class="text">Germany</div>
+        </div>
+
+
+    <!-----------------Thailand----------------->
+        <div class="slide fade">
+            <div class="numberText">3 / 3</div>
+            <img src="./images/Thailand.jpg" alt="Image of Thailand">
+            <div class="text">Thailand</div>   
+        </div>
+
+    <!-------------Next and Previous buttons---->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!----------------------Dots---------------->
+    <div class="dotGroup">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+</body>
+</html>
