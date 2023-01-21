@@ -35,3 +35,18 @@ function arrayFunction() {
     document.getElementById("array").innerHTML = 
     "My favorite workmate is " + colleagues[3];
 };
+
+/* I'll use this function to test changing Constant objects properties */
+const laptop = {
+    colour: "Silver",
+    brand: "Lenovo",
+    ram: "8Gb"
+};
+
+laptop.colour = "Red"; // Changing property in laptop
+laptop.Vram = "4Gb"; // Adding property in laptop
+
+function constTest() {
+    document.getElementById("constResult").innerHTML = 
+    "You'll notice my " + laptop.colour + " " + laptop.brand + " laptop on the desk."
+}
