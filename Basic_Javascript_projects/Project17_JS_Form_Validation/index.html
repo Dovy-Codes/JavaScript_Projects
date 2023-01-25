@@ -10,13 +10,14 @@
 </head>
 <body>
     <div id="form_container">
-        <form action="">
-            <input type="text" class="upperInput" placeholder="Name" required>
-            <input type="text" class="upperInput" placeholder="Phone number"> 
-            <input type="email" class="upperInput" placeholder="Email" required>
-            <textarea type="text" placeholder="Add your message" required id="user_text"></textarea>
+        <form action="" onsubmit="return validateForm()" name="myForm">
+            <input type="text" class="upperInput" placeholder="Name" name="clientName">
+            <input type="number"  class="upperInput" placeholder="Phone number" name="phoneNumber"> 
+            <input type="email" class="upperInput" placeholder="Email" name="email">
+            <textarea type="text" placeholder="Add your message..." name="message" id="user_text"></textarea>
             <button type="submit">Submit</button>
         </form>
+        <div id="formAlertHolder"><p id="formAlert"></p></div>
     </div>
 </body>
 </html>
