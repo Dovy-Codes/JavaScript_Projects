@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./JS/main.js" defer></script>
+    <title>Data Attributes </title>
+</head>
+<body>
+    <h1>Please choose a car</h1>
+    <p>If you click on a brand you will see what cars we curretly have available to rent by that brand</p>
+    <ul>
+        <li data-available-cars="Focus" onclick="getCar(this)" id="Ford">Ford</li>
+        <li data-available-cars="C1" onclick="getCar(this)" id="Citroen">Citroen</li>
+        <li data-available-cars="208" onclick="getCar(this)" id="Peugeot">Peugeot</li>
+        <li data-available-cars="Golf" onclick="getCar(this)" id="Volkswagen">Volkswagen</li>
+        <li data-available-cars="i10" onclick="getCar(this)" id="Hyundai">Hyundai</li>
+    </ul>
+    <p id="availableCar"><span></span></p>
+</body>
+</html>
