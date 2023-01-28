@@ -1,3 +1,4 @@
+// Testing Arrow Functions
 const lendingOffer = () => {
     let loanSize = document.getElementById("loanSize").value;
     let deposit = document.getElementById("deposit").value;
@@ -17,3 +18,8 @@ const lendingOffer = () => {
     }
     document.getElementById("return").innerHTML = answer;
 } 
+
+// Testing Sort with Arrow Function within
+const numbers = [45, 4, 9, 16, 25];
+let someOver18 = numbers.some(t => t > 18);
+document.getElementById("demo").innerHTML = "Some over 18 is " + someOver18;
