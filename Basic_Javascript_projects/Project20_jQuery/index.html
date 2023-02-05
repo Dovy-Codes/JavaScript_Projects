@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <title>jQuery</title>
+</head>
+<body>
+    <input type="text" value="">
+</body>
+<script>
+    //This will add elements/objects to the DOM tree
+    $(document).ready(function(){
+        $("html").append(
+            "<body>\
+                <div id='container'>\
+                        <div id='inner'>\
+                            <h1>Basic Jquery</h1>\
+                            <p id='1'>Paragraph 1</p>\
+                            <p id='2'>Paragraph 2</p>\
+                            <p id='3'>Paragraph 3</p>\
+                        </div>\
+                </div>\
+            </body>"
+        );
+        //Changing Paragraph 2 to the Red colour
+        $("#2").css({"color": "red"});
+
+        //This section will show and hide h1 element on click
+        let clicked;
+        $("#3").click(function() {
+            if (clicked != 1) {
+                $("h1").show();
+                clicked = 1;
+            }
+            else {
+                $("h1").hide();
+                clicked = 0;
+            }   
+        });
+
+        //This code will react to changes in input box
+        $("input").change(function(){
+            $("body").append("<p>I react to changes in the input box</p>")
+        })
+    });
+</script>
+</html>
